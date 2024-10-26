@@ -1,0 +1,5 @@
+#whenever I have something that i dont want to share on github
+.idea
+/out
+*.iml
+*.xml
