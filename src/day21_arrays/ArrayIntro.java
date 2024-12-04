@@ -3,6 +3,14 @@ import java.util.Arrays;
 
 public class ArrayIntro {
     public static void main(String[] args) {
+// Array -> data structure
+// Array is an object
+
+        // with primitive and non primitive(String, Scanner) data types
+        // every element is index
+        // size is fixed
+        // only same data type
+
         String str1 = "Denver";
         //             012345
         char letter1 = str1.charAt(0);
@@ -29,6 +37,8 @@ public class ArrayIntro {
         String city3 = "NewYork";
         String city4 = "Boston";
 
+        int [] scores; // declare
+        scores = new int [4]; // instantiate how many elements in declared array
 
         // This is just array declaration
         // String [] cities;
@@ -50,7 +60,7 @@ public class ArrayIntro {
 
 
         System.out.println();
-        System.out.println(  cities2[0] );  // when we create an array just with the size but not values added, it shows that location is there by empty.
+        System.out.println(  cities2[0] );  // when we create an array just with the size but not values added, it shows that location is there by empty. -> null
         System.out.println(  cities2[1] );
         System.out.println(  cities2[2] );
         System.out.println(  cities2[3] );
@@ -60,7 +70,7 @@ public class ArrayIntro {
         System.out.println();
         // How can I print all the elements
         System.out.println( cities1 );  // [Ljava.lang.String;@a09ee92 --- > We cant print array directly. It will show some memory location/hashcode
-        System.out.println(Arrays.toString(  cities1 )); // [Chicago, Fairfax, NewYork, Boston] | Arrays class is used and it comes from java.util package -> .toString();
+        System.out.println(Arrays.toString(  cities1 )); // [Chicago, Fairfax, NewYork, Boston] | Arrays class is used and it comes from java.util package -> .toString(); -> Returning me a STRING
 
 
         System.out.println();

@@ -10,7 +10,7 @@ public class ArrayIntro2 {
 
 
         System.out.println();
-        // Lets assign values to those locations
+        // Let's assign values to those locations
         System.out.println( arr1[0]);
         arr1[0] = 30.99;
         System.out.println(Arrays.toString(arr1));
