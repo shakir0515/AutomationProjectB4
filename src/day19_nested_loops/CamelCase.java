@@ -20,7 +20,7 @@ public class CamelCase {
         Scanner key = new Scanner(System.in);
         System.out.println("Please, enter multi words sentence: ");
         String str = key.nextLine().trim().toLowerCase(); // Today is sUNDAY ---- > today is sunday
-        String camelCase = "" + str.charAt(0);  // t
+        String camelCase = "" + str.charAt(0);
 
 
         // today is -- > length = 8
