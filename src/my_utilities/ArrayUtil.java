@@ -1,5 +1,6 @@
 package my_utilities;
 
+
 import java.util.Arrays;
 
 /**
@@ -100,4 +101,43 @@ public class ArrayUtil {
         }
         return total;
     }
+
+
+    /**
+     * This method returns int array with given int element added at the end of the given int array
+     * @param arr given int array
+     * @param num given int element
+     * @returns int array
+     */
+    public static int [] addElemInArr (int [] arr, int num) {
+
+        int [] addedArr = Arrays.copyOf(arr, arr.length + 1); // {1, 2, 3, 4, 5, _ };
+        addedArr [addedArr.length - 1] = num;
+
+        return addedArr;
+    }
+
+
+    /**
+     * This method returns int array with given int var args elements added at the end of the given int array
+     * @param arr given int array
+     * @param arr2 given int var args elements
+     * @returns int array
+     */
+    public static int [] addElemInArray (int [] arr, int ... arr2 ) {
+
+        int [] addedAr = Arrays.copyOf(arr, arr.length + arr2.length);  // {1, 2, 3, 4, 5,  _, _, _,.......}
+
+
+        for (int i = arr.length, j = 0; i < addedAr.length; i++, j++) {   // i < 9  --- >  i = 5, j = 0;  i < 9; i++, j++
+            addedAr[i] = arr2[j];
+        }
+
+        return addedAr;
+    }
+
+    /**
+     * TODO: add the version of (method overloaded) the above two method fro String
+     */
+
 }
