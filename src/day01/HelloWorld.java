@@ -11,7 +11,7 @@ package day01;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        System.out.println("Hello Alina");
         System.out.print("Welcome to Loop Academy.");
         System.out.print(" I hope you are enjoying the video");
     }
