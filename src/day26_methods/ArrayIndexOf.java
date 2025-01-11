@@ -9,7 +9,7 @@ public class ArrayIndexOf {
         //            01234567
         System.out.println(str.indexOf("o"));
         System.out.println(str.indexOf("o", 3));
-        System.out.println(str.indexOf("o", 3, 5));
+       // System.out.println(str.indexOf("o", 3, 5));
 
         System.out.println();
         System.out.println( indexOf(numArr, 78) );
